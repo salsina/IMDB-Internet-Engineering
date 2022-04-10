@@ -1,0 +1,156 @@
+img {
+    height: 40%;
+}
+
+.searchDiv {
+    display: flex;
+    width: 40%;
+}
+
+.image-film {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.movie {
+    margin: 10%;
+}
+
+.orderByBtn {
+    width: 100%;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 3px;
+    background-color: #B12025;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+}
+
+.orderByContent {
+    color: white;
+    margin-top: 7%;
+    width: 15%;
+    padding: 0px 2%;
+}
+
+.orderByBtn:hover {
+    background: #BF3B40;
+    -webkit-border-radius: 20px;
+    border-radius: 10px;
+}
+
+img {
+    height: 40%;
+}
+
+.searchInput {
+    width: 100%;
+    margin: auto;
+    max-width: 300px;
+}
+
+.searchInput input[type=text] {
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: white;
+    border-radius: 5px;
+    /* max-height: 30px; */
+}
+
+.searchInput button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: white;
+    color: #B12025;
+    font-size: 12px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 5px;
+    /* max-height: 30px; */
+}
+
+.searchInput button:hover {
+    background: #F3F3F3;
+}
+
+.searchInput::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.dropbtn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.orderBy {
+    background-color: #B12025;
+    border-radius: 10px;
+}
+
+.image-film {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.movie {
+    margin: 10%;
+    height: 180px;
+    position: relative;
+}
+
+.movie:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    padding-top: 5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(92, 10, 10, 0.521);
+    box-shadow: 5px 5px #240808c5;
+}
+
+.col-movie {
+    width: 25%;
+}
+
+.all-movies-div {
+    width: 70%;
+    display: flex;
+    margin-top: 5%;
+}
+
+.redundant-div {
+    width: 15%;
+}
+
+.movies {
+    display: flex;
+    text-align: center;
+}

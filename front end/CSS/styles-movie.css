@@ -1,0 +1,351 @@
+.movie-wallpaper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+}
+
+.fade {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(left, rgba(7, 1, 39, 0.65) 0%, rgba(193, 179, 243, 0) 20%, rgba(42, 28, 230, 0.295) 80%, rgba(7, 1, 41, 0.65) 100%);
+}
+
+.movie-description {
+    background-color: rgba(88, 88, 88, 0);
+    height: 80%;
+    margin-top: -20%;
+    margin-bottom: 5%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-film {
+    display: block;
+    max-width: 200px;
+    height: 200px;
+}
+
+.movie-picture {
+    margin-top: 5%;
+}
+
+.row {
+    justify-content: center;
+}
+
+.col {
+    background-color: #4E4E50;
+    color: white;
+    margin: 2%;
+    max-width: 50%;
+    padding: 0;
+    display: flex;
+    border-radius: 5%;
+}
+
+.cast,
+.comments {
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    padding: 2%;
+}
+
+.cast-pictures {
+    display: flex;
+    font-size: 80%;
+}
+
+.cast-picture-div {
+    width: 25%;
+    position: relative;
+}
+
+.cast-img {
+    border-radius: 50%;
+    padding: 10%;
+    width: 100%;
+}
+
+.cast-picture-div:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    border-radius: 60%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: white;
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(92, 10, 10, 0.521);
+    box-shadow: 5px 5px #240808c5;
+}
+
+.title-comment,
+.comment,
+.comment-user {
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: right;
+    font-size: 70%;
+    border-bottom: 1px dashed #f00;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.comment-user {
+    width: 80%;
+}
+
+.title-comment {
+    margin-bottom: 0;
+}
+
+.comment {
+    border-radius: 0 0 5px 5px;
+    height: 80%;
+}
+
+.title-comment {
+    border-radius: 5px 5px 0 0;
+}
+
+.comment,
+.comment-user {
+    position: relative;
+    border: none;
+}
+
+.comment-user {
+    margin: 5% 10%;
+}
+
+.register-comment {
+    background: #62F63D;
+    background-image: -webkit-linear-gradient(top, #62F63D, #1EA6D0);
+    background-image: -moz-linear-gradient(top, #62F63D, #1EA6D0);
+    background-image: -ms-linear-gradient(top, #62F63D, #1EA6D0);
+    background-image: -o-linear-gradient(top, #62F63D, #1EA6D0);
+    background-image: -webkit-gradient(to bottom, #62F63D, #1EA6D0);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    line-height: 0;
+    color: #FFFFFF;
+    width: 12%;
+    height: 20%;
+    font-size: 12px;
+    font-weight: 100;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #0059A0 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.register-comment:hover {
+    border: solid #000000 0;
+    background: #1A8B3D;
+    background-image: -webkit-linear-gradient(top, #1A8B3D, #10B9AE);
+    background-image: -moz-linear-gradient(top, #1A8B3D, #10B9AE);
+    background-image: -ms-linear-gradient(top, #1A8B3D, #10B9AE);
+    background-image: -o-linear-gradient(top, #1A8B3D, #10B9AE);
+    background-image: -webkit-gradient(to bottom, #1A8B3D, #10B9AE);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.commentor-name {
+    padding: 0 0 3%;
+    border-bottom: 1px dashed #f00;
+}
+
+.comment {
+    margin-top: 0;
+}
+
+.commentor-comment {
+    height: auto;
+    padding: 2% 5%;
+}
+
+.like-dislike-btn {
+    border: none;
+    border-radius: 100%;
+    width: 100%;
+    margin: 0 2%;
+}
+
+.like-dislike-img {
+    width: 100%;
+}
+
+.like-dislike-div {
+    text-align: center;
+}
+
+.like-dislike-info {
+    width: 15%;
+    display: flex;
+}
+
+.rate-info {
+    background-color: #b12025ec;
+    width: 150px;
+    height: fit-content;
+    overflow: hidden;
+    margin-top: 5%;
+    color: white;
+    text-align: center;
+}
+
+.rate-users,
+.rate-number-users {
+    width: 50%;
+    text-align: center;
+    padding: 8% 0;
+}
+
+.rate-number-users {
+    padding: 0;
+}
+
+.star {
+    width: 20px;
+}
+
+.imdb-rate {
+    font-size: 200%;
+    padding-top: 5%;
+}
+
+.rate-users-info {
+    display: flex;
+}
+
+.title-rate-users {
+    font-size: 90%;
+}
+
+.number-of-raters {
+    font-size: 70%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    top: 50%;
+}
+
+.dropbtn {
+    background-color: transparent;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+    background-color: green;
+}
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rate>input:checked~label {
+    color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+    color: #c59b08;
+}
+
+.movie-info {
+    display: flex;
+    justify-content: center;
+}
+
+.movie-description-div {
+    width: 60%;
+}
+
+.info-movie-title {
+    text-align: left;
+    font-size: 15px;
+}
+
+.info-movie-details {
+    text-align: right;
+    font-size: 10px;
+}
+
+.info-movie-releasedate {
+    font-size: 10px;
+    text-align: left;
+}
+
+.info-movie-description {
+    text-align: right;
+    max-width: 400px;
+    font-size: 10px;
+}
+
+.info-movie {
+    margin-top: 10%;
+    color: white;
+}
+
+.form-field {
+    height: 150px;
+    margin: 5% 10% 10%;
+    position: relative;
+    width: 80%;
+    padding: 2%;
+}
+
+.form-field button {
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+}

@@ -1,0 +1,86 @@
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    align-content: center;
+}
+
+.card {
+    margin-top: 15%;
+    margin-bottom: auto;
+    width: 45%;
+    background-color: #881a1ec7;
+}
+
+.social_icon span {
+    font-size: 60px;
+    color: #FFC312;
+}
+
+.social_icon span:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.card-header h3 {
+    color: white;
+}
+
+.social_icon {
+    position: absolute;
+}
+
+.input-group-prepend span {
+    width: 50px;
+    background-color: #FFC312;
+    color: black;
+    border: 0 !important;
+}
+
+.remember {
+    color: white;
+}
+
+.remember input {
+    width: 4%;
+    margin-left: 3%;
+    margin-right: 1%;
+}
+
+.links {
+    color: white;
+}
+
+.links a {
+    margin-right: 2%;
+}
+
+.login-button {
+    border-radius: 10px;
+    color: #000000;
+    font-size: 15px;
+    padding: 2%;
+    background-color: #FFC31C;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    width: 25%;
+    margin-top: 2%;
+    border: none;
+}
+
+.login-button:hover {
+    background: #FAD15F;
+}
+
+.register-text {
+    text-align: center;
+}
+
+.icon-image {
+    width: 100%;
+}
